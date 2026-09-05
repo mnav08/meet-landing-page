@@ -1,0 +1,18 @@
+/* Mobile + Tablet hero images*/
+.desktop-images {
+  display: none;
+}
+.mobile-tablet-img {
+  display: block;
+}
+/* Desktop */
+@media (min-width: 1024px) {
+  .mobile-tablet-img {
+    display: none;
+  }
+
+  .desktop-images {
+    display: flex;
+    justify-content: space-around;
+  }
+}

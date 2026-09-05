@@ -1,0 +1,204 @@
+:root {
+  /* Colors */
+  --color-cyan-600: #4d96a9;
+  --color-cyan-300: #8fe3f9;
+
+  --color-purple-600: #855fb1;
+  --color-purple-300: #d9b8ff;
+
+  --color-slate-900: #28283d;
+  --color-slate-600: #87879d;
+  --color-slate-300: #d1d1df;
+
+  --color-white: #fafafa;
+
+  /* Spacing */
+  --space-4: 0.25rem; /* 4px */
+  --space-8: 0.5rem; /* 8px */
+  --space-16: 1rem; /* 16px */
+  --space-24: 1.5rem; /* 24px */
+  --space-32: 2rem; /* 32px */
+  --space-40: 2.5rem; /* 40px */
+  --space-56: 3.5rem; /* 56px */
+  --space-64: 4rem; /* 64px */
+  --space-72: 4.5rem; /* 72px */
+  --space-80: 5rem; /* 80px */
+  --space-112: 7rem; /* 112px */
+
+  /* Typography Font sizes*/
+  --font-display: "Red Hat Display", sans-serif;
+  --text-heading-1: clamp(2.5rem, calc(2.25vw + 1.96875rem), 4rem);
+  --text-heading-2: clamp(2rem, calc(0.75vw + 1.8125rem), 2.5rem);
+  --text-heading-3: clamp(0.75rem, calc(0.38vw + 0.65625rem), 1rem);
+  --text-body-large: clamp(1rem, 1.25vw, 1.125rem);
+  --text-body: 1rem;
+}
+
+/* Remove default margin */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  background-color: var(--color-white);
+  font-family: var(--font-display);
+}
+
+img {
+  display: block;
+  object-fit: cover;
+  max-width: 100%;
+}
+
+/* UTULITY CLASSES */
+
+/* Typography utilities */
+.text-heading-1,
+.text-heading-2,
+.text-heading-3 {
+  font-weight: 900;
+  line-height: 110%;
+}
+
+.text-heading-1 {
+  font-size: var(--text-heading-1);
+}
+
+.text-heading-2 {
+  font-size: var(--text-heading-2);
+}
+
+.text-heading-3 {
+  font-size: var(--text-heading-3);
+  font-weight: 900;
+  letter-spacing: 0.25rem;
+}
+
+.text-preset-4 {
+  font-size: var(--text-body-large);
+  font-weight: 500;
+  line-height: 110%;
+  color: var(--color-slate-600);
+}
+
+.text-preset-5 {
+  font-size: var(--text-body);
+  font-weight: 900;
+  line-height: 150%;
+}
+
+/* bullet list number style */
+.number {
+  color: var(--color-slate-600);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.number::before {
+  content: "";
+  width: 1px;
+  height: 78px;
+  background-color: var(--color-slate-300);
+}
+.number p {
+  border: 1px solid var(--color-slate-600);
+  border-radius: 50%;
+  width: 56px;
+  height: 56px;
+  display: flex;
+  flex-direction: column;
+  font-weight: 900;
+  justify-content: center;
+  align-items: center;
+}
+
+/* buttons */
+.download-btn-green {
+  background-color: var(--color-cyan-600);
+  color: var(--color-white);
+  padding: var(--space-16) var(--space-40);
+  border-radius: var(--space-24);
+  font-weight: 600;
+}
+.version {
+  color: var(--color-cyan-300);
+}
+
+.info-btn {
+  background-color: var(--color-purple-600);
+  color: var(--color-white);
+  padding: var(--space-16) var(--space-40);
+  border-radius: var(--space-24);
+  font-weight: 600;
+}
+
+.wrapper {
+  width: min(100% - 3rem, 1120px);
+  margin-inline: auto;
+}
+
+.inner-align {
+  width: min(calc(100% - 3rem), 540px);
+  border: 2px solid skyblue;
+}
+
+/* Mobile-first design */
+header {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  padding: 3rem 5rem 0 5rem;
+  margin-bottom: var(--space-64);
+}
+
+.hero-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-40);
+  margin-bottom: var(--space-32);
+}
+
+.hero-text-content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-24);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-inline: auto;
+}
+
+.main-content {
+  margin-top: var(--space-32);
+  margin-bottom: var(--space-64);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-64);
+  align-items: center;
+}
+
+.main-imgs-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-8);
+  place-items: center;
+}
+
+.main-imgs-grid img {
+  border-radius: 1rem;
+}
+
+.main-text-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: var(--space-32);
+}
+.main-text-content .text-heading-3 {
+  color: var(--color-cyan-600);
+  text-transform: uppercase;
+}
