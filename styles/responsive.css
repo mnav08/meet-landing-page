@@ -12,9 +12,30 @@
   }
 
   .desktop-images {
+    display: block;
     display: flex;
+    justify-content: space-between;
+    width: 100vw;
+    position: absolute;
+  }
+
+  .hero-section {
+    position: relative;
+  }
+
+  .footer-content {
+    padding: var(--space-112) var(--space-80);
+    background: url("../assets/desktop/image-footer.jpg") center / cover;
+  }
+
+  .footer-text-content {
+    flex-direction: row;
     justify-content: space-around;
-    border: 2px solid tomato;
+    width: 100%;
+  }
+
+  .footer-text-content .btn-purple {
+    min-width: 11.875rem;
   }
 }
 
