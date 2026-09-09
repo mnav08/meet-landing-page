@@ -162,6 +162,10 @@ img {
   align-items: center;
 }
 
+.flex-btns {
+  gap: var(--space-16);
+}
+
 /* Mobile-first design */
 header {
   display: flex;
