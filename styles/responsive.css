@@ -2,29 +2,34 @@
 .desktop-images {
   display: none;
 }
-.mobile-tablet-img {
-  display: block;
-}
+
 /* Desktop */
 @media (min-width: 64rem) {
+  .hero-section {
+    position: relative;
+  }
+
+  .hero-text-content {
+    z-index: 10;
+  }
+
   .mobile-tablet-img {
     display: none;
   }
 
   .desktop-images {
-    display: block;
     display: flex;
     justify-content: space-between;
-    min-width: 100vw;
     position: absolute;
+    top: 0;
+    left: 50%; /* centers that container relative to the hero. */
+    width: 100vw; /* makes the image container span the entire browser window. */
+    transform: translateX(-50%); /*  balances it evenly on both sides. */
   }
 
-  .hero-section {
-    position: relative;
-  }
-  .hero-text-content {
-    position: relative;
-    z-index: 10;
+  .desktop-images img {
+    width: clamp(220px, 30vw, 394px);
+    height: auto;
   }
 
   .footer-content {
