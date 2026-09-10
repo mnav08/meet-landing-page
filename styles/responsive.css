@@ -15,12 +15,16 @@
     display: block;
     display: flex;
     justify-content: space-between;
-    width: 100vw;
+    min-width: 100vw;
     position: absolute;
   }
 
   .hero-section {
     position: relative;
+  }
+  .hero-text-content {
+    position: relative;
+    z-index: 10;
   }
 
   .footer-content {
