@@ -33,7 +33,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [https://github.com/mnav08/meet-landing-page.git]()
-- Live Site URL: [https://mnav08.github.io/meet-landing-page/]()
+- Live Site URL: [Live Demo](https://mnav08.github.io/meet-landing-page/)
 
 ## My process
 
