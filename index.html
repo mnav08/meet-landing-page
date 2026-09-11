@@ -18,42 +18,54 @@
   <body>
     <header>
       <div class="img-container">
-        <img src="./assets/logo.svg" alt="logo image" width="118" />
+        <a href="./index.html" aria-label="Meet home page">
+          <img src="./assets/logo.svg" alt="Meet logo" width="118" />
+        </a>
       </div>
     </header>
     <main>
-      <section class="hero-section wrapper flex-col-center">
+      <section class="hero-section wrapper flex-col-center" aria-labelledby="hero-title">
         <!-- Mobile + Tablet -->
-        <div class="img-container mobile-tablet-img">
+        <div class="img-container mobile-tablet-img" aria-hidden="true">
           <img src="./assets/tablet/image-hero.png" alt="" />
         </div>
 
         <!-- Desktop -->
-        <div class="img-container desktop-images">
+        <div class="img-container desktop-images" aria-hidden="true">
           <img src="./assets/desktop/image-hero-left.png" alt="" />
           <img src="./assets/desktop/image-hero-right.png" alt="" />
         </div>
 
         <div class="hero-text-content inner-align flex-col-center">
-          <h1 class="text-heading-1">Group Chat for Everyone</h1>
+          <h1 id="hero-title" class="text-heading-1">Group Chat for Everyone</h1>
           <p class="text-preset-4">
             Meet makes it easy to connect with others face-to-face virtually and
             collaborate across any device.
           </p>
           <div class="flex-btns flex-col-center">
-            <div class="download-btn-green">
+            <a
+              href="#download"
+              class="download-btn-green"
+              aria-label="Download Meet version 1.3"
+            >
               Download <span class="version">v1.3</span>
-            </div>
-            <div class="btn-purple">What is it?</div>
+            </a>
+            <a href="#about" class="btn-purple" aria-label="Learn more about Meet"
+              >What is it?</a
+            >
           </div>
         </div>
       </section>
 
-      <section class="main-content wrapper flex-col-center">
-        <div class="number flex-col-center">
+      <section
+        id="about"
+        class="main-content wrapper flex-col-center"
+        aria-labelledby="about-title"
+      >
+        <div class="number flex-col-center" aria-hidden="true">
           <p class="flex-col-center">01</p>
         </div>
-        <div class="main-imgs-grid inner-align">
+        <div class="main-imgs-grid inner-align" aria-hidden="true">
           <img src="./assets/desktop/image-woman-in-videocall.jpg" alt="" width="148" />
           <img src="./assets/desktop/image-women-videochatting.jpg" alt="" width="148" />
           <img src="./assets/desktop/image-men-in-meeting.jpg" alt="" width="148" />
@@ -61,9 +73,11 @@
         </div>
 
         <div class="main-text-content inner-align flex-col-center">
-          <div class="">
+          <div>
             <p class="text-heading-3">Built for modern use</p>
-            <h2 class="text-heading-2">Smarter meetings, all in one place</h2>
+            <h2 id="about-title" class="text-heading-2">
+              Smarter meetings, all in one place
+            </h2>
           </div>
 
           <p class="text-preset-4">
@@ -74,17 +88,23 @@
         </div>
       </section>
 
-      <section class="footer-content wrapper flex-col-center">
-        <div class="number flex-col-center">
+      <section
+        id="download"
+        class="footer-content wrapper flex-col-center"
+        aria-labelledby="footer-title"
+      >
+        <div class="number flex-col-center" aria-hidden="true">
           <p class="flex-col-center">02</p>
         </div>
         <div class="footer-text-content inner-align flex-col-center">
-          <h2 class="text-heading-2">Experience more together</h2>
+          <h2 id="footer-title" class="text-heading-2">Experience more together</h2>
           <p class="text-preset-4">
             Stay connected with reliable HD meetings and unlimited one-on-one and group
             video sessions.
           </p>
-          <div class="btn-purple">Download <span class="version-footer">v1.3</span></div>
+          <a href="#download" class="btn-purple" aria-label="Download Meet version 1.3">
+            Download <span class="version-footer">v1.3</span>
+          </a>
         </div>
       </section>
     </main>

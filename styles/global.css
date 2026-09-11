@@ -125,6 +125,18 @@ img {
 }
 
 /* buttons */
+a {
+  text-decoration: none;
+}
+
+.download-btn-green,
+.btn-purple {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
 .download-btn-green {
   background-color: var(--color-cyan-600);
   color: var(--color-white);
